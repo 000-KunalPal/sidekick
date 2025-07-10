@@ -1,0 +1,17 @@
+# This is a config for E2B sandbox template.
+# You can use template ID (a7mq9bdtthjlcom82cna) or template name (sidekick-ai-nextjs) to create a sandbox:
+
+# Python SDK
+# from e2b import Sandbox, AsyncSandbox
+# sandbox = Sandbox("sidekick-ai-nextjs") # Sync sandbox
+# sandbox = await AsyncSandbox.create("sidekick-ai-nextjs") # Async sandbox
+
+# JS SDK
+# import { Sandbox } from 'e2b'
+# const sandbox = await Sandbox.create('sidekick-ai-nextjs')
+
+team_id = "96683f7f-3ab1-411c-b4ae-d960bc85c798"
+start_cmd = "/compile_page.sh"
+dockerfile = "e2b.Dockerfile"
+template_name = "sidekick-ai-nextjs"
+template_id = "a7mq9bdtthjlcom82cna"
