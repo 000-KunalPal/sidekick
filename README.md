@@ -18,7 +18,7 @@
 
 SideKick AI is an open-source, AI-native full-stack application builder that turns text prompts into fully functional web apps — from frontend to backend, database, auth, and even deployment-ready sandboxes.
 
-> This project serves as a learning and experimentation playground for building an AI app-generation engine — inspired by tools like Lovable.dev, V0.dev, and Bolt.ai. It is an ongoing prototype that will shape the foundation for a production-grade app in the future.
+> This project serves as a learning and experimentation playground for building an AI app-generation engine — inspired by tools like lovable.dev, v0.dev, and bolt.new. It is an ongoing prototype that will shape the foundation for a production-grade app in the future.
 
 ## ✨ Key Features
 
