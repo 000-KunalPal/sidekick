@@ -36,10 +36,10 @@ export const ProjectsList = () => {
             <Link href={`/projects/${project.id}`}>
               <div className='flex items-center gap-x-4'>
                 <Image
-                  src='/logo.svg'
+                  src='/logo.png'
                   alt='SideKick AI'
-                  width={32}
-                  height={32}
+                  width={45}
+                  height={45}
                   className='object-contain'
                 />
                 <div className='flex flex-col'>
