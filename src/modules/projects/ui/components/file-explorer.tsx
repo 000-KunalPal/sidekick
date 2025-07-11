@@ -114,7 +114,7 @@ export const FileExplorer = ({ files }: FileExplorerProps) => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
-  }, []);
+  }, [files, selectedFile]);
 
   return (
     <ResizablePanelGroup direction='horizontal'>

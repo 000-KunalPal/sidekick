@@ -223,7 +223,7 @@ export const codeAgentFunction = inngest.createFunction(
     const { output: fragmentTitleOutput } = await fragmentTitleGenerator.run(
       result.state.data.summary
     );
-    const { output: responseOutput } = await fragmentTitleGenerator.run(
+    const { output: responseOutput } = await responseGenerator.run(
       result.state.data.summary
     );
 
