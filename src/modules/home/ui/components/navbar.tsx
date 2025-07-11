@@ -19,7 +19,7 @@ export const Navbar = () => {
     >
       <div className='max-w-5xl mx-auto flex justify-between items-center'>
         <Link href='/' className='flex items-center gap-2'>
-          <Image src='/logo.svg' alt='SideKick AI' width={24} height={24} />
+          <Image src='/logo.png' alt='SideKick AI' width={50} height={50} />
           <span className='font-semibold text-lg'>SideKick AI</span>
         </Link>
         <SignedOut>
