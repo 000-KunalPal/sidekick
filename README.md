@@ -1,7 +1,7 @@
 # SideKick AI: The AI-Powered App Builder
 
 <div align="center">
-  <img src="/logo.png" alt="SideKick AI" width="120"/>
+  <img src="/public/logo.png" alt="SideKick AI" width="120"/>
   
   <p align="center">
     <a href="https://github.com/000-KunalPal/sidekick/blob/main/LICENSE">
