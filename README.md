@@ -1,263 +1,131 @@
-SideKick AI: The AI-Powered App Builder
+# SideKick AI: The AI-Powered App Builder
 
-![alt text](https://via.placeholder.com/1280x640.png?text=GenApp+AI+-+Build+Full-Stack+Apps+with+a+Prompt)
+<div align="center">
+  <img src="/logo.png" alt="SideKick AI" width="120"/>
+  
+  <p align="center">
+    <a href="https://github.com/000-KunalPal/sidekick/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+    </a>
+    <a href="https://github.com/000-KunalPal/sidekick/pulls">
+      <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+    </a>
+    <a href="https://twitter.com/kunalpal0">
+      <img src="https://img.shields.io/twitter/follow/kunalpal0?style=social" alt="Follow on X">
+    </a>
+  </p>
+</div>
 
-<p align="center">
-<a href="https://github.com/your-username/your-repo-name/blob/main/LICENSE">
-<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-</a>
-<a href="https://github.com/your-username/your-repo-name/pulls">
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
-</a>
-<a href="https://twitter.com/your-twitter-handle">
-<img src="https://img.shields.io/twitter/follow/your-twitter-handle?style=social" alt="Follow on Twitter">
-</a>
-</p>
+SideKick AI is an open-source, AI-native full-stack application builder that turns text prompts into fully functional web apps — from frontend to backend, database, auth, and even deployment-ready sandboxes.
 
-GenApp AI is a full-stack, AI-powered application builder that generates complete web applications from simple text prompts. This project demonstrates how to orchestrate programmable AI agents using a modern, AI-first toolchain to handle everything from code generation to a full Git workflow.
+> This project serves as a learning and experimentation playground for building an AI app-generation engine — inspired by tools like Lovable.dev, V0.dev, and Bolt.ai. It is an ongoing prototype that will shape the foundation for a production-grade app in the future.
 
-This repository is the official codebase for the Full-Stack AI App Builder Tutorial Series.
-✨ Key Features
+## ✨ Key Features
 
-    🚀 Modern Frontend: Built with Next.js 15 and React 19 for peak performance.
+- 🚀 **Modern Frontend**: Built using Next.js 15 and React 19
+- 🎨 **Clean UI**: Styled with Tailwind CSS v4 and Shadcn/ui components
+- 📡 **End-to-End Type Safety**: Powered by tRPC
+- 🧠 **AI Agent Architecture**: Modular AI orchestration using Inngest Agents
+- 🔁 **Async Workflows**: Background job handling with Inngest
+- 🖥️ **Isolated Code Execution**: Secure sandboxes via E2B
+- 🐳 **Dockerized Runtimes**: Templated environments for consistent builds
+- 🤖 **Multi-Model Support**: Works with OpenAI, Anthropic, and Groq models
+- ⚡ **Prompt-to-App**: Generate entire components or apps from natural language
+- 🌐 **Live Previews**: Every generated app has a deployable URL
+- 📦 **Postgres DB**: Integrated via Prisma ORM with Neon
+- 🔐 **Auth & Billing**: Managed via Clerk with usage-based credits
+- 🧾 **Developer UX**: Dual-view (Code + Preview) for rapid iterations
 
-    🎨 Sleek UI: Styled with Tailwind v4 and pre-built components from Shadcn/ui.
+## 🛠️ Tech Stack
 
-    📡 End-to-End Type Safety: Using tRPC for robust, type-safe API communication.
+| Category | Technologies |
+|----------|--------------|
+| Framework | Next.js, React |
+| Styling | Tailwind, Shadcn/ui |
+| API & Types | tRPC, TypeScript |
+| AI & Background | Inngest, OpenAI, Anthropic |
+| Sandbox | E2B, Docker |
+| Database | Prisma, Neon PostgreSQL |
+| Auth & Billing | Clerk |
+| DevOps & QA | CodeRabbit |
 
-    🧠 AI Agent Architecture: Programmable AI agents powered by the Inngest Agent Toolkit.
+## 📍 Project Status
 
-    🔁 Reliable Background Jobs: Asynchronous task orchestration with Inngest.
+This is a work-in-progress research and prototyping repo, not a production-ready application (yet).
 
-    🖥️ Secure Code Execution: Isolated, secure cloud sandboxes for runtime execution with E2B.
+🔧 **The current focus is on building:**
 
-    🐳 Templated Environments: Docker-based sandbox templating for consistent and reproducible runtimes.
+- E2B integration for sandboxed runtime code execution
+- End-to-end prompt-to-app pipeline
+- Live app preview & code toggling experience
 
-    🧠 Multi-Model Support: Seamlessly switch between OpenAI, Anthropic, and Grok models.
+If you're interested in building with or contributing to the future of AI-assisted app development — you're in the right place!
 
-    🧱 AI-Powered Generation: Create components and entire applications from simple text prompts.
+## 🚀 Getting Started
 
-    🗂️ Live Project Previews: Instant access to generated projects via live URLs.
+### Prerequisites
 
-    📦 Robust Database: Postgres integration with Prisma ORM and Neon serverless Postgres.
+- Node.js v18+
+- pnpm (Install with: `npm install -g pnpm`)
+- Docker Desktop (running)
+- Accounts with Clerk, Neon, OpenAI, and E2B
 
-    🔐 Authentication & Billing: Secure user management and subscription billing handled by Clerk.
+### Installation
 
-    🧾 Usage-Based Credits: Built-in credit system to track and manage AI usage.
-
-    🧪 Dual View Interface: Toggle between a live application preview and a code explorer.
-
-🛠️ Tech Stack
-Category	Technology
-Framework	
-
-![alt text](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
-
-![alt text](https://img.shields.io/badge/React-19-blue?logo=react)
-
-Styling	
-
-![alt text](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css)
-
-![alt text](https://img.shields.io/badge/shadcn/ui-black?logo=v)
-
-API & Types	
-
-![alt text](https://img.shields.io/badge/tRPC-2A9FEE?logo=trpc&logoColor=white)
-
-![alt text](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-
-AI & Background	
-
-![alt text](https://img.shields.io/badge/Inngest-FF6B35?logo=inngest&logoColor=white)
-
-![alt text](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)
-
-![alt text](https://img.shields.io/badge/Anthropic-D06A42?logo=anthropic&logoColor=white)
-
-Sandbox	
-
-![alt text](https://img.shields.io/badge/E2B-FFC600?logo=e2b&logoColor=black)
-
-![alt text](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-
-Database	
-
-![alt text](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
-
-![alt text](https://img.shields.io/badge/Neon-00E5AC?logo=neon&logoColor=black)
-
-![alt text](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-
-Auth & Billing	
-
-![alt text](https://img.shields.io/badge/Clerk-6C47FF?logo=clerk&logoColor=white)
-
-DevOps	
-
-![alt text](https://img.shields.io/badge/CodeRabbit-6D49D2?logo=coderabbit&logoColor=white)
-
-📍 Current Project Status
-
-This project is actively being developed following the Full-stack AI App Builder tutorial. The repository reflects the progress made in the video series.
-
-I have just completed the E2B Sandboxes integration and are actively working towards finalizing the app.
-
-🚀 Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-Prerequisites
-
-    Node.js (v18 or later)
-
-    pnpm package manager (npm install -g pnpm)
-
-    Docker Desktop (must be running)
-
-    Accounts with Clerk, Neon, OpenAI, and E2B.
-
-Installation & Setup
-
-    Clone the repository:
-    Generated bash
-
-          
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
-
-        
-
-    IGNORE_WHEN_COPYING_START
-
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-
-Install dependencies:
-Generated bash
-
-      
+```bash
+git clone https://github.com/000-KunalPal/sidekick.git
+cd sidekick
 pnpm install
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-
-Set up environment variables:
-Create a .env.local file in the root of the project by copying the example file.
-Generated bash
-
-      
 cp .env.example .env.local
+```
 
-    
+Fill in `.env.local` with the appropriate API keys and config from:
 
-IGNORE_WHEN_COPYING_START
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
+- [Clerk.dev](https://clerk.dev)
+- [Neon.tech](https://neon.tech)
+- [OpenAI](https://openai.com)
+- [E2B.dev](https://e2b.dev)
 
-Now, fill in the .env.local file with your credentials:
-Generated env
+### Set up Database
 
-      
-# Neon Database Connection String (from your Neon dashboard)
-DATABASE_URL="postgres://..."
-
-# Clerk Authentication (from your Clerk dashboard)
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="pk_test_..."
-CLERK_SECRET_KEY="sk_test_..."
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
-
-# Inngest Keys (run `npx inngest-cli@latest dev` to get these)
-INNGEST_EVENT_KEY="<your-inngest-event-key>"
-INNGEST_SIGNING_KEY="<your-inngest-signing-key>"
-
-# AI Model Keys
-OPENAI_API_KEY="sk-..."
-# ANTHROPIC_API_KEY="sk-ant-..." # Optional
-# GROQ_API_KEY="gsk_..." # Optional
-
-# E2B Sandbox API Key (from your E2B dashboard)
-E2B_API_KEY="e2b_..."
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Env
-IGNORE_WHEN_COPYING_END
-
-Set up the database:
-Run the Prisma migration to set up your database schema on Neon.
-Generated bash
-
-      
+```bash
 pnpm prisma migrate dev
+```
 
-    
+### Start Development
 
-IGNORE_WHEN_COPYING_START
+In two separate terminals:
 
-    Use code with caution. Bash
-    IGNORE_WHEN_COPYING_END
+```bash
+# Terminal 1
+pnpm dev
+# App: http://localhost:3000
 
-Running the Application
-
-You need to run two processes simultaneously in separate terminal windows.
-
-    Start the Next.js development server:
-    Generated bash
-
-          
-    pnpm dev
-
-        
-
-    IGNORE_WHEN_COPYING_START
-
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-
-Your application will be available at http://localhost:3000.
-
-Start the Inngest development server:
-This command proxies your local Inngest functions and provides a UI for inspecting events and runs.
-Generated bash
-
-      
+# Terminal 2
 pnpm inngest:dev
+# Inngest UI: http://localhost:8288
+```
 
-    
+## 🤝 Contributing
 
-IGNORE_WHEN_COPYING_START
+Contributions are welcome and appreciated!
 
-    Use code with caution. Bash
-    IGNORE_WHEN_COPYING_END
+1. Fork the repo
+2. Create a new branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m "feat: add amazing feature"`
+4. Push the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
-    The Inngest Dev Server will be available at http://localhost:8288.
+All PRs are automatically reviewed by CodeRabbit AI for feedback.
 
-🤝 Contributing
+## 📄 License
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+This project is open-sourced under the MIT License.
 
-    Fork the Project
+## 🙋‍♂️ Why This Exists
 
-    Create your Feature Branch (git checkout -b feature/AmazingFeature)
+SideKick AI is my personal initiative to explore how far we can go with LLMs, agents, and modern infra to generate real, working software from natural language.
 
-    Commit your Changes (git commit -m 'Add some AmazingFeature')
+It's a learning lab, a prototype engine, and a stepping stone towards a bigger AI app builder platform.
 
-    Push to the Branch (git push origin feature/AmazingFeature)
-
-    Open a Pull Request
-
-All PRs are automatically reviewed by CodeRabbit AI for instant feedback on your changes.
-📄 License
-
-Distributed under the MIT License. See LICENSE for more information.
-
-    Clerk
-
-    Vercel for the Next.js framework.
+Let's build the future of software — together. 🌟
